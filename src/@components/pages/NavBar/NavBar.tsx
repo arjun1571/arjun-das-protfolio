@@ -19,7 +19,7 @@ const NavBar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-white/80 backdrop-blur">
+    <header className="sticky top-0 z-50 bg-white/60 backdrop-blur">
       <nav className="w-full mx-auto px-4 py-4 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="text-2xl font-bold tracking-tight">
