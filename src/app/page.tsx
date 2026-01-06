@@ -4,6 +4,9 @@ import Service from "@/@components/pages/Service/Service";
 import What from "@/@components/pages/What/What";
 import Project from "@/@components/pages/Project/Project";
 import Education from "@/@components/pages/Education/Education";
+import AboutMe from "@/@components/pages/AboutMe/AboutMe";
+import Contact from "@/@components/pages/Contact/Contact";
+import Footer from "@/@components/pages/Fotter/Fotter";
 
 export default function Home() {
   return (
@@ -14,6 +17,9 @@ export default function Home() {
       <What />
       <Project />
       <Education />
+      <AboutMe />
+      <Contact />
+      <Footer />
     </div>
   );
 }
