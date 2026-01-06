@@ -5,9 +5,9 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 const navItems = [
-  { name: "Home", href: "/" },
+  { name: "Home", href: "#home" },
   { name: "My Skills", href: "#skills" },
-  { name: "What I Do", href: "#services" },
+  { name: "What I Do", href: "#whatIdo" },
   { name: "Projects", href: "#projects" },
   { name: "Education", href: "#education" },
   { name: "About Me", href: "#about" },
@@ -45,7 +45,7 @@ const NavBar = () => {
         {/* Resume Button */}
         <div className="hidden lg:block">
           <a
-            href="https://drive.google.com/file/d/1F8kuenCQNMxEjTBeeSjG3_EV2xXSoSW6/view"
+            href="https://drive.google.com/file/d/1ZBp-vj5eWPix76fftzBXJPEuhPESDvjx/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="px-5 py-2 rounded-lg bg-primary text-white bg-black font-semibold hover:bg-primary/90 transition"

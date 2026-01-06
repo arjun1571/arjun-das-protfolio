@@ -68,7 +68,7 @@ const AboutMe = () => {
                   Contact Me
                 </a>
                 <a
-                  href="/resume.pdf"
+                  href="/Arjun React Dev.pdf"
                   className=" rounded-full px-8 bg-white border border-gray-400 py-2 font-bold"
                 >
                   Download CV

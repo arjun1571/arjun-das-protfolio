@@ -10,7 +10,7 @@ import {
 
 const Banner = () => {
   return (
-    <section className="bg-gray-200 rounded-2xl mt-10 px-6 py-14">
+    <section className="bg-gray-200 rounded-2xl  px-6 py-14">
       <div className="max-w-6xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-10">
         {/* LEFT CONTENT */}
         <div className="w-full lg:w-1/2 text-center lg:text-left">
@@ -30,12 +30,19 @@ const Banner = () => {
 
           {/* BUTTONS */}
           <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-            <button className="bg-blue-600 text-white px-8 py-2.5 rounded font-bold">
+            <a
+              href="/Arjun React Dev.pdf"
+              target="_"
+              className="bg-blue-600 text-white px-8 py-2.5 rounded font-bold"
+            >
               Download Resume
-            </button>
-            <button className="bg-black text-white px-8 py-2.5 rounded font-bold">
+            </a>
+            <a
+              href="#contact"
+              className="bg-black text-white px-8 py-2.5 rounded font-bold"
+            >
               Contact Me
-            </button>
+            </a>
           </div>
 
           {/* SOCIAL */}
@@ -73,7 +80,7 @@ const Banner = () => {
         </div>
 
         {/* RIGHT IMAGE */}
-        <div className="w-full xl:w-1/2 flex lg:justify-end justify-center">
+        {/* <div className="w-full xl:w-1/2 flex lg:justify-end justify-center">
           <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
             <Image
               src={Arjun}
@@ -83,7 +90,7 @@ const Banner = () => {
               priority
             />
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

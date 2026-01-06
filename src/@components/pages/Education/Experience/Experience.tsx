@@ -3,7 +3,7 @@
 const Experience = () => {
   const experiences = [
     {
-      company: "Ecommerce Intelligence",
+      company: "Naviforce Bangladesh",
       role: "Frontend Engineer",
       duration: "Dec 2024 – Present",
       description: `Building scalable web applications with React, Next.js, and TypeScript. 
