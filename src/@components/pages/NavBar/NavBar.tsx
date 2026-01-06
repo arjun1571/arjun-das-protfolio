@@ -1,5 +1,4 @@
 "use client";
-
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -21,12 +20,9 @@ const NavBar = () => {
   return (
     <header className="sticky top-0 z-50 bg-white/60 backdrop-blur">
       <nav className="w-full mx-auto px-4 py-4 flex items-center justify-between">
-        {/* Logo */}
         <Link href="/" className="text-2xl font-bold tracking-tight">
-          Arjun Chandra Das <span className="text-primary">Das</span>
+          Arjun Chandra Das
         </Link>
-
-        {/* Desktop Menu */}
         <ul className="hidden lg:flex items-center gap-8 font-medium">
           {navItems.map((item) => (
             <li key={item.name}>
@@ -42,7 +38,6 @@ const NavBar = () => {
           ))}
         </ul>
 
-        {/* Resume Button */}
         <div className="hidden lg:block">
           <a
             href="https://drive.google.com/file/d/1ZBp-vj5eWPix76fftzBXJPEuhPESDvjx/view?usp=sharing"
@@ -54,7 +49,6 @@ const NavBar = () => {
           </a>
         </div>
 
-        {/* Mobile Menu Button */}
         <button
           onClick={() => setOpen(!open)}
           className="lg:hidden focus:outline-none"
@@ -75,9 +69,8 @@ const NavBar = () => {
         </button>
       </nav>
 
-      {/* Mobile Menu */}
       {open && (
-        <div className="lg:hidden bg-white ">
+        <div className="lg:hidden bg-white absolute w-full top-16 left-0 shadow-md ">
           <ul className="flex flex-col gap-4 px-6 py-6 font-medium">
             {navItems.map((item) => (
               <li key={item.name}>
@@ -92,7 +85,7 @@ const NavBar = () => {
             ))}
 
             <a
-              href="https://drive.google.com/file/d/1F8kuenCQNMxEjTBeeSjG3_EV2xXSoSW6/view"
+              href="https://drive.google.com/file/d/1ZBp-vj5eWPix76fftzBXJPEuhPESDvjx/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-4 text-center px-5 py-2 rounded-lg bg-black text-white"

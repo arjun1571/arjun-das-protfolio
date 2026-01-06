@@ -12,6 +12,7 @@ export default function Home() {
   return (
     <div className="max-w-[1480px] mx-auto md:p-3 p-1">
       <NavBar />
+
       <section id="home" className="scroll-mt-28">
         <Banner />
       </section>

@@ -14,8 +14,11 @@ const Banner = () => {
       <div className="max-w-6xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-10">
         {/* LEFT CONTENT */}
         <div className="w-full lg:w-1/2 text-center lg:text-left">
-          <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold leading-tight">
-            Hi, I&apos;m <span className="text-primary">Arjun Das</span>
+          <h1
+            className="text-4xl md:text-5xl xl:text-6xl font-bold leading-tight"
+            data-aos="fade-right"
+          >
+            Hi, I&apos;m <span className="text-blue-900">Arjun Das</span>
           </h1>
 
           <h2 className="text-xl md:text-2xl font-semibold mt-3 text-gray-500">
