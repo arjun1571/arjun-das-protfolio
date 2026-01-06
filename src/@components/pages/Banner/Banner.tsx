@@ -80,7 +80,7 @@ const Banner = () => {
         </div>
 
         {/* RIGHT IMAGE */}
-        {/* <div className="w-full xl:w-1/2 flex lg:justify-end justify-center">
+        <div className="w-full xl:w-1/2 flex lg:justify-end justify-center">
           <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
             <Image
               src={Arjun}
@@ -90,7 +90,7 @@ const Banner = () => {
               priority
             />
           </div>
-        </div> */}
+        </div>
       </div>
     </section>
   );
