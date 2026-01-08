@@ -7,7 +7,6 @@ const AboutMe = () => {
       <div className=" px-4">
         <div className="bg-gray-200 rounded-3xl shadow-lg p-8 lg:p-16">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Image */}
             <div
               data-aos="fade-right"
               data-aos-duration="2000"
@@ -22,8 +21,6 @@ const AboutMe = () => {
                 priority
               />
             </div>
-
-            {/* Content */}
             <div
               data-aos="fade-up"
               data-aos-duration="2500"

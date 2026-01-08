@@ -1,4 +1,3 @@
-import React from "react";
 import WhatCart from "./WhatCard/WhatCard";
 export interface IData {
   id: number;
@@ -37,7 +36,7 @@ const What = () => {
   return (
     <div>
       <h1 className="text-center font-bold text-4xl">What I DO</h1>
-      <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5 mt-20">
+      <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5 mt-14">
         {Data?.map((data: IData) => (
           <WhatCart key={data.id} data={data} />
         ))}
@@ -47,7 +46,3 @@ const What = () => {
 };
 
 export default What;
-
-// https://i.ibb.co/sHt49G8/web-development-removebg-preview.png
-// https://i.ibb.co/z5KjXY4/desktop-comments-desktop-icon-white-png-transparent-png-980x568-free-download-on-nicepng-removebg-pr.png
-// https://i.ibb.co/GF8QTKS/friendship-removebg-preview.png
