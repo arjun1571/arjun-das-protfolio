@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     title: "Arjun Chandra Das | Frontend Developer",
     description:
       "Frontend Developer with experience in React, Next.js, Tailwind CSS, and SaaS products.",
-    url: "https://your-portfolio-link.com",
+    url: "https://arjun-das-protfolio.vercel.app/",
     siteName: "Arjun Portfolio",
     images: [
       {
