@@ -10,7 +10,7 @@ import Footer from "@/@components/pages/Fotter/Fotter";
 
 export default function Home() {
   return (
-    <div className=" max-w-[1480px] mx-auto md:p-3 p-1">
+    <div className=" max-w-[1480px] mx-auto md:p-3 p-4">
       <NavBar />
 
       <section id="home" className="scroll-mt-28">

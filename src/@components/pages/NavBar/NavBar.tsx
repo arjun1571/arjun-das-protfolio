@@ -40,7 +40,7 @@ const NavBar = () => {
 
         <div className="hidden lg:block">
           <a
-            href="https://drive.google.com/file/d/1ZBp-vj5eWPix76fftzBXJPEuhPESDvjx/view?usp=sharing"
+            href="https://drive.google.com/file/d/1tsRNbVZbQhrMV90MlpzYOjSVDtzEYbgi/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="px-5 py-2 rounded-lg bg-primary text-white bg-black font-semibold hover:bg-primary/90 transition"
@@ -85,7 +85,7 @@ const NavBar = () => {
             ))}
 
             <a
-              href="https://drive.google.com/file/d/1ZBp-vj5eWPix76fftzBXJPEuhPESDvjx/view?usp=sharing"
+              href="https://drive.google.com/file/d/1tsRNbVZbQhrMV90MlpzYOjSVDtzEYbgi/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-4 text-center px-5 py-2 rounded-lg bg-black text-white"

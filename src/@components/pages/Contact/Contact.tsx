@@ -31,7 +31,7 @@ const ContactPage = () => {
 
   return (
     <section className="flex items-center justify-center px-3 py-12">
-      <div className="w-full max-w-6xl grid md:grid-cols-2 bg-white border border-gray-200 rounded-2xl shadow-xl overflow-hidden">
+      <div className="w-full grid md:grid-cols-2 bg-white border border-gray-200 rounded-2xl shadow-xl overflow-hidden">
         <div className="p-10 md:p-14 flex flex-col justify-center bg-gray-200">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
             Let’s build something <span className="text-gray-500">smart</span>
