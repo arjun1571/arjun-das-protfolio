@@ -43,31 +43,60 @@ const skills = [
 
 const Service = () => {
   return (
-    <section className="mt-20 mb-20">
-      <div className="bg-gray-200 rounded-2xl px-6 py-12">
-        <div className="flex flex-col-reverse lg:flex-row items-center gap-12">
+    <section id="skills" className="my-20">
+      <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-slate-950 via-slate-900 to-gray-900 px-6 py-16 text-white md:px-10">
+        {/* Background Effects */}
+        <div className="absolute -left-24 top-10 h-72 w-72 rounded-full bg-blue-500/20 blur-3xl" />
+        <div className="absolute -right-24 bottom-10 h-72 w-72 rounded-full bg-cyan-400/20 blur-3xl" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(59,130,246,0.16),transparent_35%)]" />
+
+        <div className="relative z-10 flex flex-col-reverse items-center gap-14 lg:flex-row">
+          {/* Left Content */}
           <div className="w-full lg:w-1/2" data-aos="fade-right">
-            <h1 className="text-3xl lg:text-5xl font-bold mb-3">
-              Fully Compatible With 🚀
+            <span className="inline-flex rounded-full border border-white/15 bg-white/10 px-4 py-2 text-sm font-semibold text-blue-100 backdrop-blur">
+              ⚡ My Technical Skills
+            </span>
+
+            <h1 className="mt-5 text-3xl font-extrabold leading-tight md:text-5xl">
+              Fully Compatible With{" "}
+              <span className="bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">
+                Modern Tech
+              </span>
             </h1>
-            <p className="text-base lg:text-lg text-gray-500 mb-8">
+
+            <p className="mt-5 max-w-xl text-base leading-8 text-gray-300 lg:text-lg">
               Passionate web developer who loves exploring modern technologies
-              and building scalable applications.
+              and building scalable, secure, and user-friendly applications with
+              clean UI experience.
             </p>
-            <SkillClient skills={skills} />
+
+            <div className="mt-8">
+              <SkillClient skills={skills} />
+            </div>
           </div>
 
+          {/* Right Image */}
           <div
-            className="w-full lg:w-1/2 flex justify-center"
+            className="flex w-full justify-center lg:w-1/2"
             data-aos="fade-left"
           >
-            <Image
-              src={Programming.src}
-              alt="Programming Illustration"
-              width={500}
-              height={300}
-              className="rounded-xl"
-            />
+            <div className="relative">
+              <div className="absolute -inset-6 rounded-full bg-blue-500/20 blur-3xl" />
+
+              <div className="relative rounded-[2rem] border border-white/10 bg-white/10 p-6 shadow-2xl backdrop-blur-xl">
+                <Image
+                  src={Programming}
+                  alt="Programming Illustration"
+                  width={500}
+                  height={360}
+                  className="drop-shadow-2xl"
+                />
+              </div>
+
+              <div className="absolute -bottom-5 left-1/2 w-[85%] -translate-x-1/2 rounded-2xl border border-white/10 bg-white/10 px-5 py-3 text-center text-sm font-bold text-white shadow-xl backdrop-blur">
+                React • Next.js • TypeScript • Node.js
+              </div>
+            </div>
           </div>
         </div>
       </div>

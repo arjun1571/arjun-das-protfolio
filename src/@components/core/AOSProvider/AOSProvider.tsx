@@ -1,4 +1,3 @@
-// components/AOSProvider.jsx
 "use client";
 
 import { useEffect } from "react";
@@ -12,11 +11,21 @@ export default function AOSProvider({
 }) {
   useEffect(() => {
     AOS.init({
-      duration: 1200,
+      duration: 800,
       easing: "ease-out-cubic",
       once: true,
+      offset: 60,
+      delay: 0,
+      mirror: false,
+      disable: () => window.innerWidth < 768,
     });
+
+    window.addEventListener("load", AOS.refresh);
+
+    return () => {
+      window.removeEventListener("load", AOS.refresh);
+    };
   }, []);
 
-  return children;
+  return <>{children}</>;
 }

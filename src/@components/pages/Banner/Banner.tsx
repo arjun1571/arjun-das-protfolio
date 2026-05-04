@@ -4,54 +4,80 @@ import BannerIcon from "./BannerIcon/BannerIcon";
 
 const Banner = () => {
   return (
-    <section className="bg-gray-200 rounded-2xl px-6 py-14">
-      <div className="max-w-6xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-10">
-        <div className="w-full lg:w-1/2 text-center lg:text-left">
-          <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold leading-tight">
-            Hi, I&apos;m <span className="text-blue-900">Arjun Das</span>
+    <section className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-slate-950 via-slate-900 to-gray-900 px-6 py-16 text-white md:px-10 lg:py-20">
+      {/* Background Effects */}
+      <div className="absolute -left-20 top-10 h-72 w-72 rounded-full bg-blue-500/20 blur-3xl" />
+      <div className="absolute -right-20 bottom-10 h-72 w-72 rounded-full bg-cyan-400/20 blur-3xl" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(59,130,246,0.18),transparent_35%)]" />
+
+      <div className="relative z-10 mx-auto flex max-w-6xl flex-col-reverse items-center gap-12 lg:flex-row">
+        {/* Left Content */}
+        <div className="w-full text-center lg:w-1/2 lg:text-left">
+          <span className="inline-flex rounded-full border border-white/15 bg-white/10 px-4 py-2 text-sm font-semibold text-blue-100 backdrop-blur">
+            👋 Welcome to my portfolio
+          </span>
+
+          <h1 className="mt-6 text-4xl font-extrabold leading-tight md:text-5xl xl:text-6xl">
+            Hi, I&apos;m{" "}
+            <span className="bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">
+              Arjun Das
+            </span>
           </h1>
 
-          <h2 className="text-xl md:text-2xl font-semibold mt-3 text-gray-500">
+          <h2 className="mt-4 text-xl font-semibold text-gray-300 md:text-2xl">
             Front-End Web Developer
           </h2>
 
-          <p className="mt-6 text-gray md:text-lg text-gray-600">
+          <p className="mx-auto mt-6 max-w-xl text-base leading-8 text-gray-300 md:text-lg lg:mx-0">
             Software Developer with 2+ years of professional experience,
-            specializing in React & Next.js. Passionate about building scalable,
-            secure, and maintainable web applications.
+            specializing in React & Next.js. I build scalable, secure, and
+            maintainable web applications with clean UI and smooth user
+            experience.
           </p>
 
-          <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+          <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row lg:justify-start">
             <a
               href="/Arjun React Dev.pdf"
               target="_blank"
-              className="bg-blue-600 text-white px-8 py-2.5 rounded font-bold"
+              className="rounded-full bg-blue-600 px-8 py-3 text-sm font-bold text-white shadow-lg shadow-blue-600/30 transition-all duration-300 hover:-translate-y-1 hover:bg-blue-500"
             >
               Download Resume
             </a>
+
             <a
               href="#contact"
-              className="bg-black text-white px-8 py-2.5 rounded font-bold"
+              className="rounded-full border border-white/20 bg-white/10 px-8 py-3 text-sm font-bold text-white backdrop-blur transition-all duration-300 hover:-translate-y-1 hover:bg-white hover:text-black"
             >
               Contact Me
             </a>
           </div>
 
-          <div className="mt-8">
-            <h3 className="text-2xl font-bold mb-3">Find me on</h3>
+          <div className="mt-10">
+            <h3 className="mb-4 text-lg font-bold text-gray-200">
+              Find me on
+            </h3>
             <BannerIcon />
           </div>
         </div>
 
-        <div className="w-full xl:w-1/2 flex lg:justify-end justify-center">
-          <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
-            <Image
-              src={Arjun}
-              alt="Arjun Das"
-              fill
-              className="object-contain rounded-xl shadow-2xl"
-              priority
-            />
+        {/* Right Image */}
+        <div className="flex w-full justify-center lg:w-1/2 lg:justify-end">
+          <div className="relative">
+            <div className="absolute -inset-4 rounded-[2rem] bg-gradient-to-r from-blue-500 to-cyan-400 opacity-40 blur-2xl" />
+
+            <div className="relative h-72 w-72 overflow-hidden rounded-[2rem] border border-white/10 bg-white/10 p-3 shadow-2xl backdrop-blur md:h-96 md:w-96">
+              <Image
+                src={Arjun}
+                alt="Arjun Das"
+                fill
+                className="object-contain"
+                priority
+              />
+            </div>
+
+            <div className="absolute -bottom-5 left-1/2 w-[85%] -translate-x-1/2 rounded-2xl border border-white/10 bg-white/10 px-5 py-3 text-center text-sm font-semibold text-white shadow-xl backdrop-blur">
+              React • Next.js • TypeScript
+            </div>
           </div>
         </div>
       </div>

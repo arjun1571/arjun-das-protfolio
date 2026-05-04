@@ -1,5 +1,7 @@
 "use client";
+
 import Image from "next/image";
+
 type Project = {
   id: number;
   title: string;
@@ -14,43 +16,42 @@ const ProjectCard = ({ data }: { data: Project }) => {
   return (
     <div
       data-aos="zoom-out"
-      className="group relative rounded-2xl overflow-hidden border border-dashed border-gray-400 
-                 bg-white/10 backdrop-blur-md shadow-lg hover:shadow-2xl 
-                 transition-all duration-300 hover:-translate-y-2 "
+      className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.06] p-3 shadow-2xl backdrop-blur-xl transition-all duration-300 hover:-translate-y-2 hover:border-blue-400/40 hover:bg-white/10"
     >
+      <div className="pointer-events-none absolute -right-12 -top-12 h-32 w-32 rounded-full bg-blue-500/20 blur-3xl transition group-hover:bg-cyan-400/25" />
+
       {/* Image */}
-      <div className="relative h-68 w-full overflow-hidden ">
+      <div className="relative h-56 w-full overflow-hidden rounded-2xl border border-white/10 bg-slate-950/40">
         <Image
           src={image}
           alt={title}
-          height={500}
-          width={500}
-          className="p-2 transition-transform duration-500 group-hover:scale-110 rounded-2xl"
+          fill
+          className="object-cover p-2 transition-transform duration-500 group-hover:scale-110"
         />
       </div>
 
       {/* Content */}
-      <div className="p-5 flex flex-col h-52">
-        <h2 className="text-xl font-semibold mb-2 text-gray-800">{title}</h2>
+      <div className="flex min-h-56 flex-col p-3 pt-5">
+        <h2 className="mb-3 text-xl font-bold text-white">{title}</h2>
 
-        <p className="text-sm text-gray-600 line-clamp-3 flex-grow">
+        <p className="line-clamp-3 flex-grow text-sm leading-7 text-gray-300">
           {description}
         </p>
 
-        {/* Button */}
         <a
           href={url}
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-4"
+          className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-xl
+  border border-blue-400/30 bg-blue-500/10
+  px-5 py-3 text-sm font-bold text-blue-200
+  transition-all duration-300
+  hover:-translate-y-0.5 hover:border-blue-400/60 hover:bg-blue-500/20 hover:text-white"
         >
-          <button
-            className="w-full rounded-xl bg-gradient-to-r from-indigo-500 to-purple-600 
-                       text-white py-2 font-medium tracking-wide
-                       hover:opacity-90 transition cursor-pointer"
-          >
-            See Details →
-          </button>
+          See Details
+          <span className="transition-transform duration-300 group-hover:translate-x-1">
+            →
+          </span>
         </a>
       </div>
     </div>

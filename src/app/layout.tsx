@@ -6,39 +6,53 @@ import AOSProvider from "@/@components/core/AOSProvider/AOSProvider";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+  display: "swap",
 });
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Arjun Chandra Das | Frontend Developer",
+  metadataBase: new URL("https://arjun-das-protfolio.vercel.app"),
+  title: {
+    default: "Arjun Chandra Das | Frontend Developer",
+    template: "%s | Arjun Chandra Das",
+  },
   description:
-    "Arjun Chandra Das is a Frontend Developer specializing in React, Next.js, and modern web technologies. Building scalable and user-friendly web applications.",
+    "Portfolio of Arjun Chandra Das, a Frontend Developer specializing in React, Next.js, TypeScript, Tailwind CSS, and modern web application development.",
   keywords: [
     "Arjun Chandra Das",
+    "Arjun Das",
     "Frontend Developer",
     "React Developer",
     "Next.js Developer",
+    "TypeScript Developer",
+    "Tailwind CSS Developer",
     "JavaScript Developer",
     "Web Developer Bangladesh",
+    "Portfolio Website",
   ],
   authors: [{ name: "Arjun Chandra Das" }],
   creator: "Arjun Chandra Das",
+  publisher: "Arjun Chandra Das",
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "Arjun Chandra Das | Frontend Developer",
     description:
-      "Frontend Developer with experience in React, Next.js, Tailwind CSS, and SaaS products.",
-    url: "https://arjun-das-protfolio.vercel.app/",
-    siteName: "Arjun Portfolio",
+      "Frontend Developer experienced in React, Next.js, TypeScript, Tailwind CSS, and scalable web application development.",
+    url: "/",
+    siteName: "Arjun Chandra Das Portfolio",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Arjun Chandra Das Portfolio",
+        alt: "Arjun Chandra Das Portfolio Preview",
       },
     ],
     locale: "en_US",
@@ -48,22 +62,33 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Arjun Chandra Das | Frontend Developer",
     description:
-      "Frontend Developer skilled in React, Next.js, and modern UI development.",
+      "Frontend Developer skilled in React, Next.js, TypeScript, Tailwind CSS, and modern UI development.",
     images: ["/og-image.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`
+          ${geistSans.variable}
+          ${geistMono.variable}
+          min-h-screen
+          antialiased
+          bg-[radial-gradient(circle_at_top,rgba(37,99,235,0.18),transparent_32%),linear-gradient(135deg,#020617_0%,#0f172a_45%,#111827_100%)]
+          text-white
+        `}
       >
-        <AOSProvider>{children} </AOSProvider>
+        <AOSProvider>{children}</AOSProvider>
       </body>
     </html>
   );
