@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Arjun from "@/@assets/image/22.png";
+import Arjun from "@/@assets/bannerImage/arjunDas.png";
 import BannerIcon from "./BannerIcon/BannerIcon";
 
 const Banner = () => {
@@ -62,22 +62,30 @@ const Banner = () => {
 
         {/* Right Image */}
         <div className="flex w-full justify-center lg:w-1/2 lg:justify-end">
-          <div className="relative">
-            <div className="absolute -inset-4 rounded-[2rem] bg-gradient-to-r from-blue-500 to-cyan-400 opacity-40 blur-2xl" />
+          <div className="relative group">
 
-            <div className="relative h-72 w-72 overflow-hidden rounded-[2rem] border border-white/10 bg-white/10 p-3 shadow-2xl backdrop-blur md:h-96 md:w-96">
+            {/* Glow */}
+            <div className="absolute -inset-6 rounded-[2rem] bg-gradient-to-r from-blue-500 via-cyan-400 to-blue-600 opacity-25 blur-3xl transition duration-500 group-hover:opacity-40" />
+
+            <div className="relative h-[360px] w-[300px] md:h-[420px] md:w-[340px] lg:h-[520px] lg:w-[420px] overflow-hidden rounded-[2rem] border border-white/10 p-2 shadow-[0_20px_60px_rgba(0,0,0,0.6)]">
+
               <Image
                 src={Arjun}
                 alt="Arjun Das"
                 fill
-                className="object-contain"
                 priority
+                quality={100}
+                sizes="(max-width: 768px) 100vw, 420px"
+                className="object-cover rounded-[1.5rem] transition duration-500 group-hover:scale-105"
               />
+
             </div>
 
-            <div className="absolute -bottom-5 left-1/2 w-[85%] -translate-x-1/2 rounded-2xl border border-white/10 bg-white/10 px-5 py-3 text-center text-sm font-semibold text-white shadow-xl backdrop-blur">
+            {/* Bottom Tag */}
+            <div className="absolute -bottom-6 left-1/2 w-[85%] -translate-x-1/2 rounded-2xl border border-white/10 bg-gradient-to-r from-white/10 to-white/5 px-5 py-3 text-center text-sm font-semibold text-white shadow-xl backdrop-blur-md">
               React • Next.js • TypeScript
             </div>
+
           </div>
         </div>
       </div>

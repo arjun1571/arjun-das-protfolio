@@ -1,7 +1,9 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import ArjunLogo from "@/@assets/logo/arjunDasLogo.png";
 
 const navItems = [
   { name: "Home", href: "#home" },
@@ -19,14 +21,23 @@ const NavBar = () => {
 
   return (
     <header className="sticky top-0 z-50 relative backdrop-blur-xl bg-black/30 border-b border-white/10">
-      <nav className="mx-auto flex w-full max-w-[1480px] items-center justify-between px-4 py-4 lg:px-8">
+      <nav className="mx-auto flex w-full max-w-[1480px] items-center justify-between px-3 py-4 lg:px-0">
 
         {/* Logo */}
         <Link href="/" className="group flex items-center gap-3">
-          <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-400 text-lg font-bold text-white shadow-lg shadow-blue-500/20">
-            A
+
+          {/* Logo Image */}
+          <div className="relative h-14 w-14 overflow-hidden rounded-2xl shadow-lg shadow-blue-500/20">
+            <Image
+              src={ArjunLogo}
+              alt="Arjun Das"
+              fill
+              priority
+              className="object-cover transition duration-500 group-hover:scale-105"
+            />
           </div>
 
+          {/* Text */}
           <div>
             <h1 className="text-lg font-extrabold tracking-tight text-white sm:text-xl">
               Arjun Chandra Das
