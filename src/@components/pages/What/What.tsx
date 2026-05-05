@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export interface IData {
   id: number;
   name: string;
@@ -84,9 +86,11 @@ const What = () => {
 
                 <div className="relative z-10">
                   <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-2xl border border-white/10 bg-slate-950/40">
-                    <img
+                    <Image
                       src={data.img}
                       alt={data.name}
+                      height={500}
+                      width={500}
                       className="h-12 w-12 object-contain transition group-hover:scale-110"
                     />
                   </div>

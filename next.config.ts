@@ -7,10 +7,8 @@ const nextConfig: NextConfig = {
     unoptimized: true,
     remotePatterns: [
       {
-        protocol: "http",
-        hostname: "**",
-        port: "",
-        pathname: "**",
+        protocol: "https",
+        hostname: "cdn-icons-png.flaticon.com",
       },
       {
         protocol: "https",
