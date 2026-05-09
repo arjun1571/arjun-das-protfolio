@@ -76,4 +76,38 @@ Responsive design এখন একটি বাধ্যতামূলক ব�
 সবশেষে, একটি ভালো UI শুধু দেখতে সুন্দর হলেই হবে না — সেটি ব্যবহার করা সহজ হতে হবে। User যেন কোনো confusion ছাড়াই তার প্রয়োজনীয় কাজ সম্পন্ন করতে পারে, সেটাই একটি সফল UI design-এর মূল লক্ষ্য।
 `,
   },
+  {
+    id: 4,
+    slug: "production-server-crash-real-world-problem",
+    title: "Production Server Crash: Real World Development Experience",
+    category: "Development Experience",
+    date: "May 01, 2025",
+    readTime: "6 min read",
+    image:
+      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1200",
+    excerpt:
+      "High traffic এর সময় production server crash হয়ে যাওয়ার পর কীভাবে debugging, optimization এবং API control এর মাধ্যমে পুরো system recover করেছিলাম তার real experience।",
+    content: `
+Real world development এ সবচেয়ে challenging বিষয়গুলোর একটি হলো production issue handle করা। Localhost এ সব perfectly কাজ করলেও live server এ unexpected problem আসতেই পারে। এমনই একটি বড় problem face করেছিলাম ২০২৫ সালের মে মাসে।
+
+ঈদের offer campaign চলছিল এবং website এ একসাথে অনেক user visit করতে শুরু করে। কিছুক্ষণ পর checkout page extremely slow হয়ে যায়। Users order place করতে পারতেছিল না। এরপর API response timeout হতে শুরু করে এবং Cloudflare 429 Error 1015 show করতে থাকে।
+
+প্রথমে issue টা বুঝতে অনেক difficult হচ্ছিল। কারণ localhost এ কোনো problem ছিল না। পরে production logs এবং network activity analyze করার পর বুঝতে পারি frontend থেকে multiple unnecessary API requests trigger হচ্ছিল।
+
+React component re-render হওয়ার কারণে একই API repeatedly call হচ্ছিল। এর ফলে server এ huge pressure তৈরি হয় এবং eventually rate limit hit করে।
+
+Problem solve করার জন্য প্রথমে পুরো API flow analyze করি। তারপর duplicate API calls remove করি এবং debounce system add করি search functionality তে। এছাড়াও retry mechanism optimize করি যাতে failed request continuously loop না করে।
+
+এরপর server side caching add করি এবং heavy database queries optimize করি। কিছু জায়গায় unnecessary re-fetch remove করি এবং component rendering improve করি।
+
+সব changes deploy করার পর server gradually stable হতে শুরু করে। API response normal হয় এবং checkout system আবার properly কাজ করতে শুরু করে।
+
+এই experience থেকে সবচেয়ে বড় যে জিনিসটা শিখেছি সেটা হলো — production optimization শুধুমাত্র backend এর responsibility না। Frontend এর ছোট mistake ও পুরো server কে unstable করে দিতে পারে।
+
+আরেকটি গুরুত্বপূর্ণ lesson ছিল pressure handling। কারণ live production issue এর সময় quick decision নিতে হয় এবং calm থেকে debugging করতে হয়।
+
+Real world development আমাকে শিখিয়েছে:
+“Building features is easy, but maintaining a stable production system is the real challenge.”
+`,
+  },
 ];
