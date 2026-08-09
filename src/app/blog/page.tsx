@@ -5,20 +5,20 @@ import { blogData } from "@/@data/blogData";
 const BlogPage = () => {
     return (
         <main className="min-h-screen overflow-hidden bg-[#070b14] text-white">
-            <section className="relative px-4 py-24">
+            <section className="relative px-4 pb-16 pt-8 md:pt-10">
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,#1d4ed840,transparent_35%),radial-gradient(circle_at_bottom_right,#0ea5e940,transparent_30%)]" />
 
                 <div className="relative mx-auto max-w-7xl">
-                    <div className="mb-16 text-center">
+                    <div className="mb-10 text-center">
                         <span className="rounded-full border border-blue-400/30 bg-blue-500/10 px-5 py-2 text-sm font-semibold uppercase tracking-[0.25em] text-blue-300">
                             My Blog
                         </span>
 
-                        <h1 className="mt-6 text-4xl font-black tracking-tight md:text-6xl">
+                        <h1 className="mt-4 text-4xl font-black tracking-tight md:text-6xl">
                             Latest Articles
                         </h1>
 
-                        <p className="mx-auto mt-5 max-w-2xl text-base leading-8 text-slate-300">
+                        <p className="mx-auto mt-4 max-w-2xl text-base leading-8 text-slate-300">
                             Explore frontend development, clean code, UI design and modern web
                             technologies with practical and professional insights.
                         </p>

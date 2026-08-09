@@ -43,7 +43,7 @@ const skills = [
 
 const Service = () => {
   return (
-    <section id="skills" className="my-20">
+    <section id="skills" className="mb-20">
       <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-slate-950 via-slate-900 to-gray-900 px-6 py-16 text-white md:px-10">
         {/* Background Effects */}
         <div className="absolute -left-24 top-10 h-72 w-72 rounded-full bg-blue-500/20 blur-3xl" />

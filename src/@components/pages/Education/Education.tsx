@@ -23,13 +23,13 @@ const educationData = [
 
 const Education = () => {
   return (
-    <section id="education" className="my-24">
-      <div className="relative overflow-hidden rounded-[2rem] bg-gradient-to-br from-slate-950 via-slate-900 to-gray-900 px-5 py-16 text-white md:px-10 lg:py-20">
+    <section id="education" className="my-14">
+      <div className="relative overflow-hidden rounded-[2rem] bg-gradient-to-br from-slate-950 via-slate-900 to-gray-900 px-5 py-10 text-white md:px-10 lg:py-8">
         <div className="absolute -left-24 top-10 h-72 w-72 rounded-full bg-blue-500/20 blur-3xl" />
         <div className="absolute -right-24 bottom-10 h-72 w-72 rounded-full bg-cyan-400/20 blur-3xl" />
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:44px_44px]" />
 
-        <div className="relative z-10 mx-auto max-w-6xl">
+        <div className="relative z-10 mx-auto max-w-7xl">
           <div className="mx-auto mb-16 max-w-3xl text-center">
             <span className="inline-flex rounded-full border border-white/10 bg-white/10 px-5 py-2 text-sm font-semibold text-blue-200 backdrop-blur">
               🎓 Professional Journey

@@ -8,6 +8,7 @@ interface IProject {
   title: string;
   image: string;
   url: string;
+  slug?: string;
   description: string;
 }
 
@@ -22,7 +23,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <section id="projects" className="my-24">
+    <section id="projects" className="mb-20">
       <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-slate-950 via-slate-900 to-gray-900 px-6 py-16 md:px-10">
 
         {/* Glow */}

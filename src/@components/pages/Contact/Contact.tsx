@@ -18,7 +18,7 @@ const ContactPage = () => {
         "service_ix4963r",
         "template_84d5uia",
         form.current,
-        "e0EOVApd2SACK6J81"
+        "e0EOVApd2SACK6J81",
       );
 
       alert("Message sent successfully 🤍");
@@ -32,8 +32,8 @@ const ContactPage = () => {
   };
 
   return (
-    <section id="contact" className="my-24">
-      <div className="relative overflow-hidden rounded-[2rem] bg-gradient-to-br from-slate-950 via-slate-900 to-gray-900 px-5 py-16 text-white md:px-10 lg:py-20">
+    <section id="contact" className="my-14">
+      <div className="relative overflow-hidden rounded-[2rem] bg-gradient-to-br from-slate-950 via-slate-900 to-gray-900 px-5 py-10 text-white md:px-10 lg:py-8">
         <div className="absolute -left-20 top-10 h-72 w-72 rounded-full bg-blue-500/20 blur-3xl" />
         <div className="absolute -right-20 bottom-10 h-72 w-72 rounded-full bg-cyan-400/20 blur-3xl" />
 
@@ -109,8 +109,9 @@ const ContactPage = () => {
               <button
                 type="submit"
                 disabled={loading}
-                className={`w-full rounded-xl bg-blue-600 py-3 font-bold text-white shadow-lg shadow-blue-600/30 transition hover:-translate-y-0.5 hover:bg-blue-500 active:scale-95 ${loading ? "cursor-not-allowed opacity-70" : "cursor-pointer"
-                  }`}
+                className={`w-full rounded-xl bg-blue-600 py-3 font-bold text-white shadow-lg shadow-blue-600/30 transition hover:-translate-y-0.5 hover:bg-blue-500 active:scale-95 ${
+                  loading ? "cursor-not-allowed opacity-70" : "cursor-pointer"
+                }`}
               >
                 {loading ? "Sending..." : "Send Message"}
               </button>

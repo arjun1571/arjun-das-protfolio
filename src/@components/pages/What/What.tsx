@@ -48,15 +48,13 @@ const What = () => {
   ];
 
   return (
-    <section id="whatIdo" className="my-24">
-      <div className="relative overflow-hidden rounded-[2rem] bg-gradient-to-br from-slate-950 via-slate-900 to-gray-900 px-5 py-16 text-white md:px-10 lg:py-20">
-
+    <section id="whatIdo" className="my-14">
+      <div className="relative overflow-hidden rounded-[2rem] bg-gradient-to-br from-slate-950 via-slate-900 to-gray-900 px-5 py-10 text-white md:px-10 lg:py-8">
         {/* Glow */}
         <div className="absolute -left-20 top-10 h-72 w-72 bg-blue-500/20 blur-3xl rounded-full" />
         <div className="absolute -right-20 bottom-10 h-72 w-72 bg-cyan-400/20 blur-3xl rounded-full" />
 
-        <div className="relative z-10 mx-auto max-w-6xl">
-
+        <div className="relative z-10 mx-auto max-w-7xl">
           {/* Header */}
           <div className="text-center mb-14">
             <span className="px-4 py-2 bg-white/10 rounded-full text-blue-300 text-sm font-semibold backdrop-blur">
@@ -71,7 +69,8 @@ const What = () => {
             </h1>
 
             <p className="mt-5 text-gray-300 max-w-2xl mx-auto">
-              I help businesses and startups build modern, scalable and high-performance web applications.
+              I help businesses and startups build modern, scalable and
+              high-performance web applications.
             </p>
           </div>
 
@@ -106,7 +105,6 @@ const What = () => {
               </div>
             ))}
           </div>
-
         </div>
       </div>
     </section>

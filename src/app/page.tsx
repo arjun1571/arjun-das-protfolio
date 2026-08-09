@@ -17,7 +17,7 @@ export default function Home() {
         <Banner />
       </section>
 
-      <section id="skills" className="scroll-mt-24 mt-12 md:mt-20">
+      <section id="skills" className="scroll-mt-24 mt-6 md:mt-10">
         <Service />
       </section>
 
@@ -25,7 +25,7 @@ export default function Home() {
         <What />
       </section>
 
-      <section id="projects" className="scroll-mt-24 mt-12 md:mt-20">
+      <section id="projects" className="scroll-mt-24 mt-6 md:mt-10">
         <Project />
       </section>
 

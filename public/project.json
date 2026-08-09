@@ -1,10 +1,27 @@
 [
     {
+        "id": "00",
+        "title": "CashFlow",
+        "slug": "cashflow",
+        "image": "/projects/cashflow/login.png",
+        "url": "https://cashflow.nfdev.me/",
+        "description": "Multi-company financial management system to track deposits, expenses, balance and reports — all in one dashboard."
+    },
+    {
         "id": "01",
+        "title": "EPrint BD",
+        "slug": "eprint-bd",
+        "image": "/projects/eprint/home.png",
+        "url": "https://eprint.nfdev.me/",
+        "description": "Online printing service platform for business cards, flyers, banners, mugs and more — order, quote and track delivery across Bangladesh."
+    },
+    {
+        "id": "02",
         "title": "BikretaBm",
-        "image": "https://i.ibb.co/hJJx32Gp/bikretabm-myei-app-dashboard-cache-bust-1760961466261-1.png",
-        "url": "https://admin.nfdev.me/",
-        "description": "BikretaBm is an all-in-one e-commerce solution for managing products, orders, customers, and sales from a single dashboard. Email: super@gmail.com Password: 123456"
+        "slug": "bikretabm",
+        "image": "/projects/bikretabm/dashboard-summary.png",
+        "url": "https://nfdev.me/",
+        "description": "BikretaBm is an all-in-one e-commerce solution for managing products, orders, customers, and sales from a single dashboard."
     },
     {
         "id": "02",
@@ -29,31 +46,18 @@
     },
     {
         "id": "05",
-        "title": "Ekota Bike Service & Sell Shop",
-        "image": "https://i.ibb.co/WyM8mvH/ekota.png",
-        "url": "https://ekota-bike-service.web.app/",
-        "description": "Figma to react js design."
-    },
-    {
-        "id": "06",
         "title": "Doctor Portal",
         "image": "https://i.ibb.co/3kRHs4s/doctor-portal.png",
         "url": "https://doctor-portal-fc8f0.web.app/",
         "description": "Online doctor appionment using react js nodejs mongoDB firebase."
     },
     {
-        "id": "07",
+        "id": "06",
         "title": "Tech Zone BD",
         "image": "https://i.ibb.co/Qvb9tFv/teach-zone.png",
         "url": "https://graceful-rugelach-f73a7f.netlify.app/",
         "description": "Static page design using html css and Bootstrap"
-    },
-    {
-        "id": "08",
-        "title": "Car Service BD",
-        "image": "https://i.ibb.co/YdGNCPQ/bd-car-app.png",
-        "url": "https://bd-car-service.web.app/",
-        "description": "Repair on car service select on online. using react nodejs mongodb and firebase"
     }
+  
 ]
 
